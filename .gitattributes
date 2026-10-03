@@ -1,0 +1,4 @@
+* text=auto eol=lf
+/AGENTS.md export-ignore
+/package.json export-ignore
+/.gitattributes export-ignore

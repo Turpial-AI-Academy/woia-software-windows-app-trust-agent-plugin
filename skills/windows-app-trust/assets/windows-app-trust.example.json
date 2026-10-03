@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "profile": "local-project",
+  "artifactRoots": [
+    "dist"
+  ],
+  "publicCertificate": ".trust/windows/publisher.cer",
+  "signing": {
+    "thumbprintEnvironmentVariable": "WINDOWS_APP_TRUST_SIGNER_THUMBPRINT",
+    "timestampUrl": null
+  },
+  "appControl": {
+    "supplementalPolicyName": "Example Project Local Signer",
+    "basePolicyPath": null
+  }
+}
