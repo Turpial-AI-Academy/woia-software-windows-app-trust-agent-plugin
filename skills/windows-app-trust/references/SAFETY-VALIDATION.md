@@ -69,14 +69,28 @@ matching policy/base/version in inventory, not enforcement or device acceptance.
 Inspect CodeIntegrity events on a disposable authorized Windows test machine
 before claiming operational acceptance. Never auto-deploy policy during tests.
 
-## Local regression commands
+## Provider certification and source-lineage regressions
+
+Generic certification for this thin WOIA provider is owned by `woia-ecosystem`.
+From its checkout:
+
+```text
+mise run plugin:certify-thin --repo <provider-checkout>
+```
+
+This checks the exact committed package; it does not execute the Windows guard
+regressions or establish signing, trust-store, or policy-enforcement acceptance.
+
+The executable guard regressions belong to the [source-lineage repository](https://github.com/Turpial-AI-Academy/windows-app-trust-agent-plugin/tree/c3554c1426224e055c3bb5f30ebe29d546810730).
+They are not bundled in this thin provider. From that source-lineage checkout,
+the recorded regression commands are:
 
 ```text
 mise run ci:fast
 node --test tests/windows-trust-guards.test.mjs
 ```
 
-The Windows executable regressions cover the signature decision matrix,
+Those source-lineage Windows executable regressions cover the signature decision matrix,
 XML/type/digest disagreement, base enforcement rejection, inventory/update/refresh
 failures, post-deployment identity drift, junction/hard-link escapes and concurrent
 file/ancestor replacement. They use disposable files and fake CiTool effects;
