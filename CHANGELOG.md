@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Clarify certification and regression ownership in current source documentation without changing the published v0.5.0 capability payload.
+
 ## 0.5.0 - 2026-10-03
 
 - Establish WOIA v0.5.0 auxiliary lineage for `windows-app-trust`.
