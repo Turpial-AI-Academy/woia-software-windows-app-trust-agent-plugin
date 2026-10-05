@@ -4,7 +4,7 @@ WOIA Software auxiliary provider for `windows-app-trust`, migrated preserve-firs
 
 Activation remains evidence-triggered. Windows presence alone never activates this capability.
 
-- Plugin version: `0.5.0`
+- Plugin version: `0.5.1`
 - Primary skill: `$windows-app-trust`
 - Authoring profile: thin
 - Source commit: `c3554c1426224e055c3bb5f30ebe29d546810730`
