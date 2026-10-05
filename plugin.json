@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "woia-software-windows-app-trust",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Audits, configures, signs, and validates Windows application trust for local development and controlled distribution, including Authenticode, local certificate trust, Smart App Control-aware guidance, and App Control for Business workflows.",
   "author": {
     "name": "Turpial AI Academy",
