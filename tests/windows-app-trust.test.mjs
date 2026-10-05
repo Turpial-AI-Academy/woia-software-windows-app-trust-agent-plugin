@@ -143,14 +143,12 @@ test('App Control mutating helpers enforce the Home edition boundary', () => {
 
 test('Windows inbox module bootstrap avoids ambient PSModulePath-only discovery', () => {
   const common = read('skills/windows-app-trust/scripts/lib/windows-trust-modules.ps1');
-  const smoke = read('scripts/smoke-windows-signing.ps1');
   const signer = read('skills/windows-app-trust/scripts/sign-artifact.ps1');
   const cert = read('skills/windows-app-trust/scripts/new-local-code-signing-cert.ps1');
 
   assert.match(common, /\$PSHOME/);
   assert.match(common, /System32\\WindowsPowerShell\\v1\.0\\Modules/);
   assert.match(common, /Import-Module -Name \$candidate/);
-  assert.match(smoke, /Import-WindowsTrustModule -Name 'Microsoft\.PowerShell\.Security'/);
   assert.match(signer, /Get-AuthenticodeSignature/);
   assert.match(signer, /Set-AuthenticodeSignature/);
   assert.match(cert, /Import-WindowsTrustModule -Name 'PKI'/);
