@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Restore the canonical MIT license text from the original provider lineage.
+
 - Restore portable Windows App Trust domain and safety regressions for centralized thin certification.
 
 **Unreleased main maintenance**
