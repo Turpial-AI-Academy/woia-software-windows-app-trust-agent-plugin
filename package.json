@@ -1,6 +1,6 @@
 {
   "name": "woia-software-windows-app-trust-agent-plugin-repo",
   "private": true,
-  "version": "0.5.0",
+  "version": "0.5.1",
   "type": "module"
 }
