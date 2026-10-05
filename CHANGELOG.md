@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Restore portable Windows App Trust domain and safety regressions for centralized thin certification.
+
 **Unreleased main maintenance**
 
 - Clarify certification and regression ownership in current source documentation without changing the published v0.5.0 capability payload.
