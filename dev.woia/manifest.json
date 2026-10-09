@@ -1,42 +1,9 @@
 {
   "schema": "dev.woia.provider-manifest/v1",
-  "version": "0.5.1",
+  "version": "0.5.6",
   "authoring_profile": "thin",
   "department": "software",
   "capability": "windows-app-trust",
   "skill": "windows-app-trust",
-  "kind": "auxiliary",
-  "source_lineage": {
-    "repository": "Turpial-AI-Academy/windows-app-trust-agent-plugin",
-    "version": "2.0.1",
-    "commit": "c3554c1426224e055c3bb5f30ebe29d546810730"
-  },
-  "migrated_portable_paths": [
-    "skills/windows-app-trust/SKILL.md",
-    "skills/windows-app-trust/assets/README.md",
-    "skills/windows-app-trust/assets/windows-app-trust.example.json",
-    "skills/windows-app-trust/references/APP-CONTROL.md",
-    "skills/windows-app-trust/references/AUTHENTICODE.md",
-    "skills/windows-app-trust/references/DISTRIBUTION.md",
-    "skills/windows-app-trust/references/FORKS.md",
-    "skills/windows-app-trust/references/SAFETY-VALIDATION.md",
-    "skills/windows-app-trust/references/SECURITY.md",
-    "skills/windows-app-trust/references/SMART-APP-CONTROL.md",
-    "skills/windows-app-trust/references/SOURCES.md",
-    "skills/windows-app-trust/references/TROUBLESHOOTING.md",
-    "skills/windows-app-trust/references/TRUST-MODEL.md",
-    "skills/windows-app-trust/scripts/deploy-app-control-policy.ps1",
-    "skills/windows-app-trust/scripts/discover-windows-trust.ps1",
-    "skills/windows-app-trust/scripts/export-public-cert.ps1",
-    "skills/windows-app-trust/scripts/install-local-trust.ps1",
-    "skills/windows-app-trust/scripts/lib/GuardedArtifact.cs",
-    "skills/windows-app-trust/scripts/lib/windows-trust-guards.ps1",
-    "skills/windows-app-trust/scripts/lib/windows-trust-modules.ps1",
-    "skills/windows-app-trust/scripts/new-app-control-signer-policy.ps1",
-    "skills/windows-app-trust/scripts/new-local-code-signing-cert.ps1",
-    "skills/windows-app-trust/scripts/remove-app-control-policy.ps1",
-    "skills/windows-app-trust/scripts/remove-local-trust.ps1",
-    "skills/windows-app-trust/scripts/sign-artifact.ps1",
-    "skills/windows-app-trust/scripts/verify-artifact.ps1"
-  ]
+  "kind": "auxiliary"
 }

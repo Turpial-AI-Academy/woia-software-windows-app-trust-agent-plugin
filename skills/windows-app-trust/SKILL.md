@@ -5,7 +5,7 @@ license: MIT
 compatibility: Core signing workflows require Windows. Local App Control policy authoring requires a supported non-Home edition with ConfigCI; deployment operations require elevation.
 metadata:
   author: Turpial AI Academy
-  version: "0.5.1"
+  version: "0.5.6"
 ---
 
 # windows-app-trust
